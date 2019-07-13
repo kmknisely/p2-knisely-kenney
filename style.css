@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+
+#slideshow {
+  position: relative;
+}
+
+img{
+  width: 100%;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: 1s;
+}
+
+.fade-out{
+  opacity: 0;
+  transition: 1s;
+}
+
+
+.controls {
+  position: absolute;
+  bottom: 0%
+  right: 0%;
+  z-index: 1111;
+}
+
+.button {
+  background-color: #4CAF50;
+  border-radius: 50%;
+  padding: 20px;
+  height: 20px;
+}
