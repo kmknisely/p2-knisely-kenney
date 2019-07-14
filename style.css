@@ -39,9 +39,12 @@ a{
 }
 
 /* Homepage */
-#home, #country-page{
+#home, #about, #country-page{
   background-color: #05121d;
   color: #eae3dc;
+  font-family: baskerville-urw, serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #slideshow {
