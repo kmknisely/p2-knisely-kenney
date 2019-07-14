@@ -9,8 +9,43 @@
   src: url(fonts/gotham.ttf);
 }
 
+/*Menu*/
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  margin: 10%;
+}
+
+.menu p {
+  font-size: 1.125rem;
+  font-family: trajan-pro-3, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+  color: #eae3dc;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+}
+
+#logo img {
+  width: 30%;
+}
+
 /* Homepage */
+#home{
+  background-color: #05121d;
+  color: #eae3dc;
+}
+
 #slideshow {
+  background-color: lightgrey;
   position: relative;
   height: 400px;
   width: 100%;
@@ -41,7 +76,7 @@ img{
 }
 
 .title {
-  margin: 5%;
+  margin: 5% 10%;
   position: absolute;
   z-index: 1111;
 }
