@@ -198,6 +198,7 @@ object-fit: cover;
   margin-bottom: 5%;
 }
 
+
 .info{
   display: flex;
   opacity: 0;
@@ -218,4 +219,8 @@ object-fit: cover;
 .info p {
   line-height: 1.2em;
   margin-left: 2%;
+}
+
+#blurb {
+  margin-bottom: 5%;
 }
