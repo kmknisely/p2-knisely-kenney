@@ -9,6 +9,10 @@
   src: url(fonts/gotham.ttf);
 }
 
+
+img {
+  display: block;
+}
 /*Menu*/
 
 .menu{
@@ -250,4 +254,70 @@ object-fit: cover;
 
 #blurb {
   margin-bottom: 5%;
+}
+
+
+
+@media (min-width: 760px){
+
+  /*Home Page*/
+
+  #home{
+    display: flex;
+    flex-flow: row;
+  }
+
+  #slideshow{
+    height: 100vh;
+    width: 60%;
+  }
+
+  #sidebar {
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  .title {
+    margin: 5%;
+  }
+
+  h1{
+    font-size: 2.8rem;
+  }
+
+  .controls {
+    justify-content: flex-start;
+  }
+
+  .button {
+  margin: 5%;
+  }
+
+  .blurb p{
+    font-size: .9rem;
+  }
+
+
+}
+
+
+@media(min-width: 1200px){
+  /*Home*/
+
+  #slideshow{
+    width: 70%;
+  }
+
+  #sidebar{
+    width: 30%;
+  }
+
+  h1{
+    font-size: 4.2rem;
+  }
+
+
 }
