@@ -61,7 +61,7 @@ forwardButton.addEventListener('click', function(){
   fadeOut();
   forward();
   setTimeout(changeSlide, 1000);
-  setTimeout(fadeIn, 1000);
+  setTimeout(fadeIn, 1100);
 
 
   console.log(i);
@@ -72,7 +72,7 @@ backwardButton.addEventListener('click', function(){
   fadeOut();
   backward();
   setTimeout(changeSlide, 1000);
-  setTimeout(fadeIn, 1000);
+  setTimeout(fadeIn, 1100);
 
   console.log(i);
 
