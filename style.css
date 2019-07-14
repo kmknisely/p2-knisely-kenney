@@ -136,6 +136,17 @@ border-width: 7.5px 0 7.5px 13.0px;
 border-color: transparent transparent transparent rgba(71,72,72,.2);
 }
 
+.blurb {
+  margin: 5% 10%;
+}
+
+.blurb p {
+font-family: baskerville-urw, serif;
+font-weight: 400;
+font-style: italic;
+margin: 5% 0;
+}
+
 
 /* Countries Page */
 
