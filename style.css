@@ -3,10 +3,16 @@
   border: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'gotham';
+  src: url(fonts/gotham.ttf);
+}
+
 /* Homepage */
 #slideshow {
   position: relative;
-  height: 300px;
+  height: 400px;
   width: 100%;
   display: flex;
 }
@@ -35,8 +41,17 @@ img{
 }
 
 .title {
+  margin: 5%;
   position: absolute;
   z-index: 1111;
+}
+
+h1{
+  font-family: 'gotham';
+  color: white;
+  font-size: 1.875rem;
+  letter-spacing: .1em;
+  line-height: 1.2em;
 }
 
 .controls {
@@ -49,11 +64,36 @@ img{
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: rgba(255,255,255,.63);
   border-radius: 50%;
-  padding: 20px;
-  height: 20px;
-  margin: 3%;
+  padding: 8px;
+  margin: 0 10% 8% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover{
+  background-color: rgba(255,255,255,.9);
+  transition: .2s;
+}
+
+.arrow-left {
+margin-right: 3px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 7.5px 13.0px 7.5px 0;
+border-color: transparent rgba(71,72,72,.2) transparent transparent;
+}
+
+.arrow-right {
+margin-left: 3px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 7.5px 0 7.5px 13.0px;
+border-color: transparent transparent transparent rgba(71,72,72,.2);
 }
 
 
