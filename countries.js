@@ -102,8 +102,16 @@ var countries = [
 
 ];
 
+function countryDisplay(){
+  var x = document.getElementsByClassName("info");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.opacity = 1;
+}
+};
 
-function myFunction() {
+
+function countryFunction() {
   var x = document.getElementById("dropdown");
   //Country Name
   document.getElementById('name').innerHTML = countries[Number(x.value)].name;
@@ -119,6 +127,8 @@ function myFunction() {
   document.getElementById('language').innerHTML = countries[Number(x.value)].language;
   //image
   document.getElementById('country-image').src = countries[Number(x.value)].image;
+
+  countryDisplay();
 }
 
-document.getElementById("dropdown").addEventListener("change", myFunction);
+document.getElementById("dropdown").addEventListener("change", countryFunction);
