@@ -17,71 +17,76 @@
 
 <body id="country-page">
 
-  <section id="right-side">
 
-    <div id="dropdown-container">
-      <select id="dropdown" name="dropdown">
-        <option>Select a Country </option>
-        <option value="0">Algeria</option>
-        <option value="1">Chad</option>
-        <option value="2">Egypt</option>
-        <option value="3">Libya</option>
-        <option value="4">Mali</option>
-        <option value="5">Mauritania</option>
-        <option value="6">Morocco</option>
-        <option value="7">Niger</option>
-        <option value="8">Sudan</option>
-        <option value="9">Tunisia</option>
-      </select>
+
+
+    <section id="left-side">
+      <div id="top-container">
+        <div id="dropdown-container">
+          <select id="dropdown" name="dropdown">
+            <option>Select a Country </option>
+            <option value="0">Algeria</option>
+            <option value="1">Chad</option>
+            <option value="2">Egypt</option>
+            <option value="3">Libya</option>
+            <option value="4">Mali</option>
+            <option value="5">Mauritania</option>
+            <option value="6">Morocco</option>
+            <option value="7">Niger</option>
+            <option value="8">Sudan</option>
+            <option value="9">Tunisia</option>
+          </select>
+        </div>
+
+      <section class="country-info">
+          <div class="info">
+            <h3 id="name"></h3>
+          </div>
+
+          <p id="blurb">There are 10 countries that make up the Sahara. Select one from the dropdown list above to learn more.</p>
+
+          <div class="info">
+            <h4> Abbreviation </h4>
+            <p id="abbr"></p>
+          </div>
+
+          <div class="info">
+            <h4> Capital </h4>
+            <p id="cap"></p>
+          </div>
+
+          <div class="info">
+            <h4> Population </h4>
+            <p id="pop"></p>
+          </div>
+
+          <div class="info">
+            <h4> Area </h4>
+            <p id="area"></p>
+          </div>
+
+          <div class="info">
+            <h4> Language </h4>
+            <p id="language"></p>
+          </div>
+
+      </section>
     </div>
 
-  <section class="country-info">
-      <div class="info">
-        <h3 id="name"></h3>
-      </div>
+  <div id="bottom-container">
+    <section class='menu'>
+      <p><a href='index.html'>Home </a></p>
+      <p><a href='about.html'>About </a></p>
+      <p><a href='countries.html'>Countries </a></p>
+    </section>
 
-      <p id="blurb">There are 10 countries that make up the Sahara. Select one from the dropdown list above to learn more.</p>
-
-      <div class="info">
-        <h4> Abbreviation: </h4>
-        <p id="abbr"></p>
-      </div>
-
-      <div class="info">
-        <h4> Capital </h4>
-        <p id="cap"></p>
-      </div>
-
-      <div class="info">
-        <h4> Population </h4>
-        <p id="pop"></p>
-      </div>
-
-      <div class="info">
-        <h4> Area </h4>
-        <p id="area"></p>
-      </div>
-
-      <div class="info">
-        <h4> Language </h4>
-        <p id="language"></p>
-      </div>
-
-  </section>
-
-  <section class='menu'>
-    <p><a href='index.html'>Home </a></p>
-    <p><a href='about.html'>About </a></p>
-    <p><a href='countries.html'>Countries </a></p>
-  </section>
-
-  <figure id=logo>
-    <img src="imgs/logo-scf.png" alt="Sahara Conservation Fund Logo" title="Sahara Conservation Fund Logo">
-  </figure>
-
+    <figure id=logo>
+      <img src="imgs/logo-scf.png" alt="Sahara Conservation Fund Logo" title="Sahara Conservation Fund Logo">
+    </figure>
+  </div>
 </section>
 
-<section id="left-side">
+<section id="right-side">
 
     <figure class="country-img-container">
       <img id="country-image" src="imgs/placeholder.jpg">

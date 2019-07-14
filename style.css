@@ -300,6 +300,29 @@ object-fit: cover;
     font-size: .9rem;
   }
 
+  /*Countries Page*/
+
+  #country-page {
+    display: flex;
+    flex-flow: row;
+  }
+
+  #left-side{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  #right-side {
+    width: 60%;
+  }
+
+  .country-img-container{
+    height: 100vh;
+    width: 100%;
+  }
+
 
 }
 
@@ -315,8 +338,22 @@ object-fit: cover;
     width: 30%;
   }
 
+  .blurb p{
+    font-size: 1rem;
+  }
+
   h1{
     font-size: 4.2rem;
+  }
+
+  /*Countries*/
+
+  #left-side{
+    width: 30%;
+  }
+
+  #right-side {
+    width: 70%;
   }
 
 
