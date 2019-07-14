@@ -6,7 +6,8 @@ var countries = [
 "capital": "Algiers",
 "population": "40,400,000",
 "area": "2,381,741",
-"lanugage": "arabic"
+"language": "Arabic",
+"image":"imgs/algeria.jpg"
 },
 
 //1
@@ -15,7 +16,8 @@ var countries = [
 "capital": "N'Djamena",
 "population": "14,497,000",
 "area": "1,284,000",
-"language": "French"
+"language": "French",
+"image":"imgs/chad.jpg"
 },
 
 //2
@@ -24,7 +26,8 @@ var countries = [
 "capital": "Cairo",
 "population": "91,290,000",
 "area": "1,002,450",
-"lanugage": "arabic"
+"language": "Arabic",
+"image":"imgs/egypt.jpg"
 },
 
 //3
@@ -33,7 +36,8 @@ var countries = [
 "capital": "Tripoli",
 "population": "6,385,000",
 "area": "1,759,540",
-"lanugage": "arabic"
+"language": "Arabic",
+"image":"imgs/libya.jpg"
 },
 
 //4
@@ -42,7 +46,8 @@ var countries = [
 "capital": "Bamako",
 "population": "18,135,000",
 "area": "1,240,192",
-"language": "French"
+"language": "French",
+"image":"imgs/mali.jpeg"
 },
 
 //5
@@ -51,7 +56,8 @@ var countries = [
 "capital": "Nouakchott",
 "population": "3,718,678",
 "area": "1,030,700",
-"lanugage": "arabic"
+"language": "Arabic",
+"image":"imgs/mauritania.jpg"
 },
 
 //6
@@ -60,7 +66,8 @@ var countries = [
 "capital": "Rabat",
 "population": "33,337,529",
 "area": "446,550",
-"lanugage": "arabic"
+"language": "Arabic",
+"image":"imgs/morocco.jpg"
 },
 
 //7
@@ -69,7 +76,8 @@ var countries = [
 "capital": "Niamey",
 "population": "20,715,000",
 "area": "1,267,000",
-"language": "French"
+"language": "French",
+"image":"imgs/niger.jpg"
 },
 
 //8
@@ -78,7 +86,8 @@ var countries = [
 "capital": "Khartoum",
 "population": "39,598,700",
 "area": "1,886,068",
-"lanugage": "arabic"
+"language": "Arabic",
+"image":"imgs/sudan.jpg"
 },
 
 //9
@@ -87,7 +96,8 @@ var countries = [
 "capital": "Tunis",
 "population": "11,154,400",
 "area": "163,610",
-"lanugage": "arabic"
+"language": "Arabic",
+"image":"imgs/tunisia.jpg"
 }
 
 ];
@@ -106,7 +116,9 @@ function myFunction() {
   //area
   document.getElementById('area').innerHTML = countries[Number(x.value)].area;
   //language
-    document.getElementById('language').innerHTML = countries[Number(x.value)].language;
+  document.getElementById('language').innerHTML = countries[Number(x.value)].language;
+  //image
+  document.getElementById('country-image').src = countries[Number(x.value)].image;
 }
 
 document.getElementById("dropdown").addEventListener("change", myFunction);
