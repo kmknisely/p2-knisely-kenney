@@ -32,6 +32,7 @@ a{
 #logo{
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 #logo img {
@@ -45,6 +46,7 @@ a{
   font-family: baskerville-urw, serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1rem;
 }
 
 #slideshow {
@@ -157,9 +159,52 @@ object-fit: cover;
   display: flex;
   align-content: center;
   justify-content: center;
+  width: 100%;
+}
+
+#dropdown{
+  margin: 5%;
+  width: 70%;
+  padding: 2%;
+  font-family: trajan-pro-3, serif;
+  font-weight: 400;
+  font-size: .9rem;
+  font-style: normal;
+  background-color: #2A3035;
+  color: #eae3dc;
+}
+
+.country-info {
+  margin: 2% 10% 0 10%;;
+}
+
+#name{
+  font-family: "gotham";
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  letter-spacing: .1em;
+  line-height: 1.2em;
+  margin-bottom: 5%;
 }
 
 .info{
   display: flex;
   opacity: 0;
+  margin-bottom: 2%;
+}
+
+.info h4 {
+  font-family: trajan-pro-3, serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2em;
+}
+
+.info h4::after {
+  content: ": ";
+}
+
+.info p {
+  line-height: 1.2em;
+  margin-left: 2%;
 }
