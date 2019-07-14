@@ -1,3 +1,5 @@
+var slide = document.getElementById('country-image');
+
 var countries = [
 
 //0
@@ -102,12 +104,24 @@ var countries = [
 
 ];
 
+//Functions
+
 function countryDisplay(){
   var x = document.getElementsByClassName("info");
   var i;
   for (i = 0; i < x.length; i++) {
     x[i].style.opacity = 1;
 }
+};
+
+function fadeOut() {
+  slide.classList.remove('fade-in');
+  slide.classList.add('fade-out');
+};
+
+function fadeIn (){
+slide.classList.remove('fade-out');
+slide.classList.add('fade-in');
 };
 
 
@@ -131,4 +145,11 @@ function countryFunction() {
   countryDisplay();
 }
 
-document.getElementById("dropdown").addEventListener("change", countryFunction);
+function setDelay() {
+  fadeOut();
+  setTimeout(countryFunction, 800);
+  setTimeout(fadeIn, 1000);
+
+}
+
+document.getElementById("dropdown").addEventListener("change", setDelay);
