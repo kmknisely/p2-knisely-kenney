@@ -31,6 +31,15 @@ img {
 a{
   text-decoration: none;
   color: #eae3dc;
+  padding: 2%;
+  transition: all .2s;
+
+}
+
+a:hover{
+  background-color: #eae3dc;
+  color: #05121d;
+  transition: all .2s;
 }
 
 #logo{
