@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
+<head>
 
 		<meta charset="utf-8">
 
-		<title></title>
+		<title>Countries - SCF</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/lhn3kpw.css">
 
 		<link type="text/css" rel="stylesheet" href="style.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	</head>
+</head>
 
-	<body id="country-page">
+<body id="country-page">
 
-
-<section id="right-side">
+  <section id="right-side">
 
     <div id="dropdown-container">
       <select id="dropdown" name="dropdown">
@@ -34,47 +35,59 @@
       </select>
     </div>
 
-    <div class="info">
-      <h3 id="name"></h3>
-    </div>
+    <section class="country-info">
+      <div class="info">
+        <h3 id="name"></h3>
+      </div>
 
-    <div class="info">
-      <h4> Abbreviation </h4>
-      <p id="abbr"></p>
-    </div>
+      <div class="info">
+        <h4> Abbreviation </h4>
+        <p id="abbr"></p>
+      </div>
 
-    <div class="info">
-      <h4> Capital </h4>
-      <p id="cap"></p>
-    </div>
+      <div class="info">
+        <h4> Capital </h4>
+        <p id="cap"></p>
+      </div>
 
-    <div class="info">
-      <h4> Population </h4>
-      <p id="pop"></p>
-    </div>
+      <div class="info">
+        <h4> Population </h4>
+        <p id="pop"></p>
+      </div>
 
-    <div class="info">
-      <h4> Area </h4>
-      <p id="area"></p>
-    </div>
+      <div class="info">
+        <h4> Area </h4>
+        <p id="area"></p>
+      </div>
 
-    <h4 class="info"> Language </h4>
-    <p id="language"></p>
-  </div>
+      <h4 class="info"> Language </h4>
+      <p id="language"></p>
+    </div>
+  </section>
+
+  <section class='menu'>
+    <p><a href='index.html'>Home </a></p>
+    <p><a href='about.html'>About </a></p>
+    <p><a href='countries.html'>Countries </a></p>
+  </section>
+
+  <figure id=logo>
+    <img src="imgs/logo-scf.png" alt="Sahara Conservation Fund Logo" title="Sahara Conservation Fund Logo">
+  </figure>
 
 </section>
 
 <section id="left-side">
 
-  <figure class="country-img-container">
-    <img id="country-image" src="imgs/placeholder.jpg">
-  </figure>
+    <figure class="country-img-container">
+      <img id="country-image" src="imgs/placeholder.jpg">
+    </figure>
 
 </section>
 
 
-    <script src="countries.js"></script>
+<script src="countries.js"></script>
 
-	</body>
+</body>
 
 </html>

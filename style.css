@@ -39,7 +39,7 @@ a{
 }
 
 /* Homepage */
-#home{
+#home, #country-page{
   background-color: #05121d;
   color: #eae3dc;
 }
