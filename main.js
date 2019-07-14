@@ -50,14 +50,19 @@ slide.classList.remove('fade-out');
 slide.classList.add('fade-in');
 };
 
+function changeSlide(){
+  document.slide.src=images[i];
+
+};
+
 window.onload = setImage();
 
 forwardButton.addEventListener('click', function(){
   fadeOut();
   forward();
-  setTimeout(fadeIn, 2000);
+  setTimeout(changeSlide, 1000);
+  setTimeout(fadeIn, 1000);
 
-  document.slide.src=images[i];
 
   console.log(i);
 }
@@ -66,8 +71,8 @@ forwardButton.addEventListener('click', function(){
 backwardButton.addEventListener('click', function(){
   fadeOut();
   backward();
-  setTimeout(fadeIn, 2000);
-  document.slide.src=images[i];
+  setTimeout(changeSlide, 1000);
+  setTimeout(fadeIn, 1000);
 
   console.log(i);
 
